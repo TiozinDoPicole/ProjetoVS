@@ -8,4 +8,16 @@ void main(List<String> arguments) {
   print('Informe sua idade: ');
   String textoidade = stdin.readLineSync() ?? "";
   int idade = int.parse(textoidade);
+  if (idade >= 16) {
+    print('Informe seu peso em kg: ');
+    var textopeso = stdin.readLineSync() ?? "";
+    double peso = double.parse(textopeso);
+    if (peso < 100) {
+      print('Pode entrar no brinquedo!');
+    } else {
+      print('Não pode entrar por excesso de peso');
+    }
+  } else {
+    print('Não pode entrar pois tem menos de 16 anos');
+  }
 }
