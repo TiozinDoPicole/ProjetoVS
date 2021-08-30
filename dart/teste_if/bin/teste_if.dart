@@ -5,7 +5,7 @@ void main(List<String> arguments) {
   print('Digite sua nota: ');
   var textonota = stdin.readLineSync() ?? "";
   var nota = double.parse(textonota);
-  if (nota >= 6) {
+  if (nota >= 6.0) {
     print('Você passou!');
   } else {
     print('Você reprovou');
