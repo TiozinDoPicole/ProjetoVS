@@ -8,19 +8,19 @@ void main(List<String> arguments) {
   print('Insira seu nome: ');
   var nome = stdin.readLineSync();
   print('Insira sua idade: ');
-  var textoidade = stdin.readLineSync() ?? "";
+  var textoidade = stdin.readLineSync();
   int idade = int.parse(textoidade);
-  MostrarPar('$nome', idade);
+  MostrarPar(nome, idade);
   var comida2 = comida();
   print('Exemplo: ');
   print(comida2);
   print('Insira uma comida que você gosta: ');
   var comida3 = stdin.readLineSync();
-  var comida4 = comidaPar('$comida3');
+  var comida4 = comidaPar(comida3);
   print(comida4);
 
   print('Insira um número inteiro: ');
-  String textonum = stdin.readLineSync() ?? "";
+  String textonum = stdin.readLineSync();
   int num = int.parse(textonum);
 
   print('Os números pares de 0 até seu número são: ');
